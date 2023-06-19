@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+body { /* Se configura el background */
+    background-color: rgb(212, 239, 245);
+    margin-top: 0;
+    margin-bottom: 0;
+    background-image: url(resources/estudiantes.png);
+}

@@ -1,1 +1,23 @@
-<p>login works!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.component.css">
+    
+</head>
+<body>
+    <div class="login">
+        <form (ngSubmit)="iniciarSesion()"> 
+          <fieldset>
+            <h1>Sistema de Registro de Asistencias (Docentes)</h1>
+            <input type="text" id="usuario" name="usuario" placeholder="Usuario" class="icon" [(ngModel)]="usuario"><br><br>
+            <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" class="icon" [(ngModel)]="contrasena"><br><br>
+            <input type="submit" value="Iniciar sesión" id="iniciar"><br><br>
+            <a href="contraolv.html" id="contraolv">¿Olvidaste tu contraseña?</a>
+          </fieldset>
+        </form>
+      </div>
+</body>
+</html>
