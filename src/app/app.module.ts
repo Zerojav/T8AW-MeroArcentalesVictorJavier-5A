@@ -6,19 +6,39 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { IndexComponent } from './index/index.component';
+import { AyudaComponent } from './ayuda/ayuda.component';
+import { AcercadeComponent } from './acercade/acercade.component';
+import { PerfilComponent } from './perfil/perfil.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { RouterModule, Routes } from '@angular/router';
+import { RegistrodocComponent } from './registrodoc/registrodoc.component';
 
+
+const appRoutes:Routes=[
+  {path:'inicio', component:InicioComponent},
+  {path:'login', component:LoginComponent},
+  {path:'registrodoc', component:RegistrodocComponent},
+  {path:'ayuda', component:AyudaComponent},
+  {path:'acercade', component:AcercadeComponent},
+  {path:'perfil', component:PerfilComponent}
+
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    IndexComponent
+    AyudaComponent,
+    AcercadeComponent,
+    PerfilComponent,
+    InicioComponent,
+    RegistrodocComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

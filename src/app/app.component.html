@@ -1,2 +1,16 @@
+<div class="nav-bar">
+   <ng-container>
+    <nav>
+        <ul> <!-- Redireccion del navbar -->
+            <li><a href="">Inicio</a></li>
+            <li><a href="/registrodoc">Registrar Profesores</a></li>
+            <li><a href="/acercade">Acerca de</a></li>
+            <li><a href="/perfil">Perfil</a></li>
+            <li><a href="/ayuda">Ayuda</a></li>
+            <li><a href="#" onclick="cerrarSesion()">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+   </ng-container>
+</div>
 
-<app-login></app-login>
+<router-outlet></router-outlet>

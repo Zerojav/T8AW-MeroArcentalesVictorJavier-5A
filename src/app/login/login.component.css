@@ -1,6 +1,7 @@
 
 /* Inicio de la configuracion de estilos de la interfaz del login */
 
+
 .login form{
     height: 0;
 }
@@ -63,7 +64,7 @@
     background-size: 30px; /* Ajusta el tamaño del ícono de perfil */
   }
   
-  #contraseña {
+  #contrasena {
     background-image: url('../../resources/contra.png');
     background-size: 30px; /* Ajusta el tamaño del ícono de perfil */
   }
