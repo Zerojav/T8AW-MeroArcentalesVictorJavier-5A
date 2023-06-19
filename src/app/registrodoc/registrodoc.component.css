@@ -1,0 +1,47 @@
+.registrodoc fieldset{ 
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 1000px;
+    height: 334px;
+    text-align: justify;
+    background: rgba(4, 58, 97, 0.873);
+    border: none;
+    border-radius: 20px;
+}
+
+.registrodoc h1, h2, label{
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.registrodoc h1{
+    text-align: center;
+    font-size: 45px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #2a2a2a;
+}
+
+.registrodoc label{
+    margin-left: 75px;
+    width: 100px;
+    display: inline-block;
+}
+
+.registrodoc #Enviar{
+    background-color: rgba(2, 102, 173, 0.933);
+    padding: 10px 20px;
+    margin-left: 450px;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    border-radius: 10px;
+    border-color: rgba(4, 58, 97, 0.873);
+}
+
+.registrodoc input{
+    border-radius: 100px;
+    text-align: center;
+    padding: 3px 20px;
+    background-color: rgb(214, 219, 239);
+}

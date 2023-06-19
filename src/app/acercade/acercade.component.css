@@ -1,0 +1,33 @@
+.acercade {
+    margin-top: 20px;
+}
+
+.acercade fieldset{
+    margin-top: 20px;
+    width: 700px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(16, 54, 82, 0.873);
+    border: none;
+    border-radius: 10px;
+}
+
+.acercade p,h1{
+    color: white;
+}
+
+.acercade p{
+    font-size: 18px;
+}
+
+.acercade #fieldsetad1{
+    margin: 0 auto;
+}
+
+.acercade #fieldsetad2{
+    margin-left: 400px;
+}
+
+.acercade #fieldsetad3{
+    margin-left: 400px;
+}
