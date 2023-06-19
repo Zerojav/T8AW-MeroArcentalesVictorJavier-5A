@@ -15,11 +15,23 @@ export class AppComponent {
     return this.router.url === '/login';
   }
 
+  isContraolvPage(): boolean {
+    return this.router.url === '/contraolv';
+  }
+
   ngOnInit() {
-    if (!localStorage.getItem('loggedIn') || localStorage.getItem('loggedIn') !== 'true') {
-      // Si el usuario no ha iniciado sesión correctamente, redirige a "login.component.html"
-      this.router.navigate(['login']);
-    } 
+    setTimeout(() => {
+      const allowedRoutes = ['login', 'contraolv']; // Rutas permitidas sin inicio de sesión
+      const currentRoute = this.router.url.split('/')[1]; // Obtiene la ruta actual
+      console.log('Ruta actual:', currentRoute);
+  
+      if (!localStorage.getItem('loggedIn') || localStorage.getItem('loggedIn') !== 'true') {
+        // Si el usuario no ha iniciado sesión correctamente y la ruta no está permitida, redirige a "login"
+        if (!allowedRoutes.includes(currentRoute)) {
+          this.router.navigate(['login']);
+        }
+      }
+    }, 100);
   }
   cerrarSesion(){
     localStorage.setItem('loggedIn', 'false');

@@ -1,7 +1,7 @@
 /* Inicio de la configuracion del navbar y del fieldset superior donde va la imagen de la universidad */
 
 .nav-bar{
-    background-color: rgb(33, 93, 222);
+    background-color: rgba(2, 92, 218, 0.934);
     border: none;
     z-index: 1;
     position: relative;
@@ -72,7 +72,7 @@
     margin: 0 auto;
     margin-top: 0;
     text-align: left;
-    background: rgb(154, 212, 241);
+    background: rgba(53, 167, 255, 0.873);
     padding: 0;
     border: none;
     border-radius: 3px;

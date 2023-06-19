@@ -12,6 +12,7 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { RouterModule, Routes } from '@angular/router';
 import { RegistrodocComponent } from './registrodoc/registrodoc.component';
+import { ContraolvComponent } from './contraolv/contraolv.component';
 
 
 const appRoutes:Routes=[
@@ -20,8 +21,8 @@ const appRoutes:Routes=[
   {path:'registrodoc', component:RegistrodocComponent},
   {path:'ayuda', component:AyudaComponent},
   {path:'acercade', component:AcercadeComponent},
-  {path:'perfil', component:PerfilComponent}
-
+  {path:'perfil', component:PerfilComponent},
+  {path:'contraolv', component:ContraolvComponent}
 ];
 
 @NgModule({
@@ -33,6 +34,7 @@ const appRoutes:Routes=[
     PerfilComponent,
     InicioComponent,
     RegistrodocComponent,
+    ContraolvComponent,
   ],
   imports: [
     BrowserModule,

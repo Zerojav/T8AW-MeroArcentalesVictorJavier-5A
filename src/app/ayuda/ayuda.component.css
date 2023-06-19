@@ -1,0 +1,54 @@
+.ayuda fieldset{ 
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 700px;
+    height: 450px;
+    text-align: justify;
+    background: rgba(16, 54, 82, 0.873);
+    border: none;
+    border-radius: 20px;
+}
+
+.ayuda h1, label{
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ayuda h1{
+    text-align: center;
+    font-size: 45px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #2a2a2a;
+}
+
+.ayuda label{
+    margin-left: 75px;
+    width: 100px;
+    display: inline-block;
+}
+
+.ayuda #Enviar{
+    background-color: rgba(2, 102, 173, 0.933);
+    padding: 10px 20px;
+    margin-left: 313px;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    border-radius: 10px;
+    border-color: rgba(4, 58, 97, 0.873);
+}
+
+.ayuda input{
+    border-radius: 100px;
+    text-align: center;
+    padding: 3px 100px;
+    background-color: rgb(214, 219, 239);
+}
+
+.ayuda textarea{
+    border-radius: 14px;
+    text-align: center;
+    background-color: rgb(214, 219, 239);
+    border-color: #000;
+}
