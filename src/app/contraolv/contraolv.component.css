@@ -12,15 +12,16 @@
 .contraolv fieldset{
     text-align: center;
     margin-top: 50px;
-    background-color: rgb(135, 158, 241) ;
+    background-color: rgba(4, 58, 97, 0.873);
     border-radius: 10px;
-    border-color: rgb(135, 158, 241);
+    border-color: rgba(5, 87, 146, 0.967);
     width: 500px;
     margin-left: 500px;
 }
 
 .contraolv{
     border-radius: 20px;
+    color: #ffffff;
 }
 
 .contraolv #Enviar{
@@ -31,4 +32,5 @@
 
 .contraolv input{
     border-radius: 5px;
+    text-align: center;
 }
