@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profesores>
+    <profesor>
+        <nombre>William Zamora</nombre>
+        <facultad>FACCI</facultad>
+        <asignatura>Analisis de bases de datos</asignatura>
+        <correo>wzamora@uleam.com</correo>
+        <telefono>09999999</telefono>
+        <horadentradaysalida>08:00 - 10:00</horadentradaysalida>
+        <asistencia></asistencia>
+    </profesor>
+    <profesor>
+        <nombre>William Zamora</nombre>
+        <facultad>FACCI</facultad>
+        <asignatura>Analisis de bases de datos</asignatura>
+        <correo>wzamora@uleam.com</correo>
+        <telefono>09999999</telefono>
+        <horadentradaysalida>10:00 - 12:00</horadentradaysalida>
+        <asistencia></asistencia>
+    </profesor>
+    <profesor>
+        <nombre>Jorge Moya</nombre>
+        <facultad>FACCI</facultad>
+        <asignatura>Metodos Numericos</asignatura>
+        <correo>jmoya@uleam.com</correo>
+        <telefono>09999999</telefono>
+        <horadentradaysalida>08:00 - 10:00</horadentradaysalida>
+        <asistencia></asistencia>
+    </profesor>
+    <profesor>
+        <nombre>Luis Mendoza</nombre>
+        <facultad>FACCI</facultad>
+        <asignatura>Metodos Numericos</asignatura>
+        <correo>lmendoza@uleam.com</correo>
+        <telefono>09999999</telefono>
+        <horadentradaysalida>08:00 - 10:00</horadentradaysalida>
+        <asistencia></asistencia>
+    </profesor>
+    <profesor>
+        <nombre>Patricia Quiroz</nombre>
+        <facultad>FACCI</facultad>
+        <asignatura>Aplicaciones Web</asignatura>
+        <correo>pquiroz@uleam.com</correo>
+        <telefono>09999999</telefono>
+        <horadentradaysalida>08:00 - 10:00</horadentradaysalida>
+        <asistencia></asistencia>
+    </profesor>
+    <profesor>
+        <nombre>Patricia Quiroz</nombre>
+        <facultad>FACCI</facultad>
+        <asignatura>Aplicaciones Web</asignatura>
+        <correo>pquiroz@uleam.com</correo>
+        <telefono>09999999</telefono>
+        <horadentradaysalida>13:00 - 15:00</horadentradaysalida>
+        <asistencia></asistencia>
+    </profesor>
+    <profesor>
+        <nombre>Nemar Torres</nombre>
+        <facultad>Arquitectura</facultad>
+        <asignatura>Analisis y proyectos</asignatura>
+        <correo>ntorres@uleam.com</correo>
+        <telefono>09999999</telefono>
+        <horadentradaysalida>15:00 - 17:00</horadentradaysalida>
+        <asistencia></asistencia>
+    </profesor>
+    <profesor>
+        <nombre>Nemar Torres</nombre>
+        <facultad>Arquitectura</facultad>
+        <asignatura>Analisis y proyectos</asignatura>
+        <correo>ntorres@uleam.com</correo>
+        <telefono>09999999</telefono>
+        <horadentradaysalida>10:00 - 12:00</horadentradaysalida>
+        <asistencia></asistencia>
+    </profesor>
+    <profesor>
+        <nombre>Marcelo Espinoza</nombre>
+        <facultad>Arquitectura</facultad>
+        <asignatura>Graficadores digitales</asignatura>
+        <correo>mespinoza@uleam.com</correo>
+        <telefono>09999999</telefono>
+        <horadentradaysalida>13:00 - 15:00</horadentradaysalida>
+        <asistencia></asistencia>
+    </profesor>
+    <profesor>
+        <nombre>Marcelo Espinoza</nombre>
+        <facultad>Arquitectura</facultad>
+        <asignatura>Graficadores digitales</asignatura>
+        <correo>mespinoza@uleam.com</correo>
+        <telefono>09999999</telefono>
+        <horadentradaysalida>15:00 - 17:00</horadentradaysalida>
+        <asistencia></asistencia>
+    </profesor>
+</profesores>

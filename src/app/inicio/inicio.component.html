@@ -1,1 +1,103 @@
-<p>inicio works!</p>
+<div class = "asistencias" >
+    <div class="seleccion-opciones"> <!-- Seleccion del filtro -->
+        <label for="facultad">Seleccionar Facultad</label>
+        <select name="facultad" id="facultad" class="filtro">
+            <option value="">Selecciona una opción por favor</option>
+            <option value="FACCI">FACCI</option>
+            <option value="Arquitectura">Arquitectura</option>
+            <option value="Economia">Economia</option>
+        </select>
+        <label for="asignatura">Seleccionar Asignatura</label>
+        <select name="asignatura" id="asignatura" class="filtro">
+            <option value="">Seleccione una opción por favor</option>
+        </select>
+        <label for="profesor">Seleccionar Profesor</label>
+        <select name="profesor" id="profesor" class="filtro">
+            <option value="">Seleccione una opción por favor</option>
+        </select>
+    </div>
+    <div class="tabla"> <!-- Contenido de la tabla -->
+        <table id="tabla-asistencia"> <!-- Indica que la tabla tiene una id para referenciarla en JS-->
+            <caption>Asistencia docentes</caption>
+            <thead> <!-- Columnas de la tabla -->
+                <th>Nombre</th>
+                <th>Facultad</th>
+                <th>Asignatura</th>
+                <th>Correo</th>
+                <th>Teléfono</th>
+                <th>Hora de entrada y salida</th>
+                <th>Asistencia</th>
+            </thead>
+            <!-- Datos de la tabla-->
+            <tbody>
+
+            </tbody>
+            
+        </table>
+        <button onclick="mensaje()">Enviar</button>
+        <button id="importarXML">Importar XML</button>
+        <button id="importarJSON">Importar JSON</button>
+    </div>
+</div>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+
+    <script type="text/javascript">
+        
+        $(document).ready(() => { // Funcion para iniciar la lectura de xml
+            $('#importarXML').click(() => { // Se inicia al momento de dar click en el botón Importar XML
+                
+                $.ajax({
+                    
+                    type: 'GET',
+                    url: '../../resources/profesores.xml', // Obtiene el archivo xml
+                    dataType: 'xml',
+                    
+                }).done((data) => { // Valida la lectura del archivo
+                    $('#tabla-asistencia tbody').empty(); // Evita que se dupliquen los datos en la tabla
+                    $(data).find('profesor').each(function() { // Recorre el archivo xml
+                        let fila = $('<tr>'); // Agrega cada fila a la tabla
+                        fila.append($(`<td>${$(this).find('nombre').text()}</td>`)),
+                        fila.append($(`<td>${$(this).find('facultad').text()}</td>`)),
+                        fila.append($(`<td>${$(this).find('asignatura').text()}</td>`));
+                        fila.append($(`<td>${$(this).find('correo').text()}</td>`));
+                        fila.append($(`<td>${$(this).find('telefono').text()}</td>`));
+                        fila.append($(`<td>${$(this).find('horadentradaysalida').text()}</td>`));
+                        let tdAsistencia = $('<td>');
+                        let checkbox = $('<input type="checkbox">');
+                        tdAsistencia.append(checkbox);
+                        fila.append(tdAsistencia);
+                        $('#tabla-asistencia tbody').append(fila);
+                        
+                    });
+                });
+            });
+        });
+
+        $(document).ready(() =>{ // Funcion para iniciar la lectura de json
+
+            $('#importarJSON').click(function() { // Se inicia al momento de dar click en el botón Importar JSON
+                $.ajax({
+                    type: 'GET',
+                    url: 'profesores.json', // Obtiene el archivo xml
+                    dataType: 'json'
+                }).done((data) => { // Valida la lectura del archivo
+                    $('#tabla-asistencia tbody').empty(); // Evita que se dupliquen los datos en la tabla
+                    $.each(data, function(indice, profesor) { // Recorre el archivo json
+                        let fila = $('<tr>'); // Agrega cada fila a la tabla
+                        fila.append($(`<td>${profesor.nombre}</td>`));
+                        fila.append($(`<td>${profesor.facultad}</td>`));
+                        fila.append($(`<td>${profesor.asignatura}</td>`));
+                        fila.append($(`<td>${profesor.correo}</td>`));
+                        fila.append($(`<td>${profesor.telefono}</td>`));
+                        fila.append($(`<td>${profesor.horaEyS}</td>`));
+
+                        let checkbox = $('<input>').attr('type', 'checkbox').attr('name', 'asistencia');
+                        fila.append($('<td>').append(checkbox));
+                        
+                        $('#tabla-asistencia tbody').append(fila);
+                    });
+                });
+            });
+        });
+</script>

@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent {
+  mensaje() {
+    alert("Asistencia Registrada");
+    location.reload();
+  }
 
 }

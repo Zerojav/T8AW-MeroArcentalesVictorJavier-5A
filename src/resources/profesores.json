@@ -1,0 +1,92 @@
+[
+    {
+        "nombre": "Robert Moreira",
+        "facultad": "FACCI",
+        "asignatura": "Analisis de bases de datos",
+        "correo": "rmoreira@uleam.com",
+        "telefono": "0999999999",
+        "horaEyS": "08:00 - 10:00",
+        "asistencia": ""
+    },
+    {
+        "nombre": "Robert Moreira",
+        "facultad": "FACCI",
+        "asignatura": "Analisis de bases de datos",
+        "correo": "rmoreira@uleam.com",
+        "telefono": "0999999999",
+        "horaEyS": "10:00 - 12:00",
+        "asistencia": ""
+    },
+    {
+        "nombre": "Luis Mendoza",
+        "facultad": "FACCI",
+        "asignatura": "Metodos Numericos",
+        "correo": "lmendoza@uleam.com",
+        "telefono": "0999999999",
+        "horaEyS": "08:00 - 10:00",
+        "asistencia": ""
+    },
+    {
+        "nombre": "Luis Mendoza",
+        "facultad": "FACCI",
+        "asignatura": "Metodos Numericos",
+        "correo": "lmendoza@uleam.com",
+        "telefono": "0999999999",
+        "horaEyS": "10:00 - 12:00",
+        "asistencia": ""
+    },
+    {
+        "nombre": "Patricia Quiroz",
+        "facultad": "FACCI",
+        "asignatura": "Aplicaciones Web",
+        "correo": "pquiroz@uleam.com",
+        "telefono": "0999999999",
+        "horaEyS": "10:00 - 12:00",
+        "asistencia": ""
+    },
+    {
+        "nombre": "Elsa Vera",
+        "facultad": "FACCI",
+        "asignatura": "Aplicaciones Web",
+        "correo": "evera@uleam.com",
+        "telefono": "0999999999",
+        "horaEyS": "08:00 - 10:00",
+        "asistencia": ""
+    },
+    {
+        "nombre": "Nemar Torres",
+        "facultad": "Arquitectura",
+        "asignatura": "Analisis y proyectos",
+        "correo": "ntorres@uleam.com",
+        "telefono": "0999999999",
+        "horaEyS": "08:00 - 10:00",
+        "asistencia": ""
+    },
+    {
+        "nombre": "Nemar Torres",
+        "facultad": "Arquitectura",
+        "asignatura": "Analisis y proyectos",
+        "correo": "ntorres@uleam.com",
+        "telefono": "0999999999",
+        "horaEyS": "10:00 - 12:00",
+        "asistencia": ""
+    },
+    {
+        "nombre": "Fabian Sanchez",
+        "facultad": "Economia",
+        "asignatura": "Comercio Exterior",
+        "correo": "fsanchez@uleam.com",
+        "telefono": "0999999999",
+        "horaEyS": "10:00 - 12:00",
+        "asistencia": ""
+    },
+    {
+        "nombre": "Fabian Sanchez",
+        "facultad": "Economia",
+        "asignatura": "Comercio Exterior",
+        "correo": "fsanchez@uleam.com",
+        "telefono": "0999999999",
+        "horaEyS": "15:00 - 18:00",
+        "asistencia": ""
+    }
+]
